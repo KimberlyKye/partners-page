@@ -1,7 +1,4 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -28,25 +25,45 @@
 
 .searchbar__input::placeholder {
   color: var(--searchbar-placeholder-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 .searchbar__input::-webkit-input-placeholder {
   color: var(--searchbar-placeholder-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 .searchbar__input:-moz-placeholder {
   color: var(--searchbar-placeholder-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
   opacity: 1;
 }
 .searchbar__input:-ms-input-placeholder {
   color: var(--searchbar-placeholder-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 @media screen and (min-width: 1440px) {
   .logo {
-    margin-left: 135px;
+    margin-left: 9.38vw;
   }
 
   .user {
-    margin-right: 137px;
+    margin-right: 9.52vw;
   }
 
   .searchbar {
@@ -56,6 +73,9 @@
 
 @media screen and (min-width: 768px) {
   .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100vw;
     height: 80px;
   }
@@ -94,11 +114,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .logo {
-    margin-left: 20px;
+    margin-left: 2.6vw;
   }
 
   .user {
-    margin-right: 20px;
+    margin-right: 2.6vw;
   }
 
   .searchbar {
@@ -107,6 +127,60 @@
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    display: grid;
+    grid-template-areas:
+      "A B"
+      "C C";
+  }
+  .logo {
+    grid-area: A;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5.6vw;
+  }
+  .user {
+    grid-area: B;
+    height: 73px;
+    justify-self: end;
+    border: none;
+    margin-right: 5.6vw;
+  }
+  .searchbar {
+    grid-area: C;
+    height: 40px;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: -9px;
+  }
+
+  .searchbar__prefix {
+    border-top: 1px solid var(--border-color);
+    padding: 8px 0 8px 5.33vw;
+  }
+
+  .searchbar__input {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid var(--border-color);
+    width: 88.27vw;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 0 0 5px;
+    background: transparent;
+  }
+
+  .user__profile-button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
   .user__pic,
   .user__name {
     display: none;
