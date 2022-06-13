@@ -2,6 +2,11 @@
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .user {
   display: flex;
   align-items: center;
@@ -80,6 +85,10 @@
     height: 80px;
   }
 
+  .logo {
+    justify-content: center;
+  }
+
   .searchbar {
     display: flex;
     align-items: center;
@@ -89,7 +98,7 @@
     border: 1px solid var(--border-color);
     border-radius: 4px 0px 0px 4px;
     border-right: 0;
-    padding: 7px 0 7px 10px;
+    padding: 7px 0 7px 9px;
     box-sizing: border-box;
     img {
       width: 16px;
@@ -102,6 +111,7 @@
     border-radius: 0px 4px 4px 0px;
     border-left: 0;
     padding-left: 5px;
+    padding-bottom: 0;
     box-sizing: border-box;
     width: 100%;
     height: 40px;
@@ -136,8 +146,7 @@
   .logo {
     grid-area: A;
     height: 73px;
-    display: flex;
-    align-items: center;
+
     justify-content: flex-start;
     margin-left: 5.6vw;
   }
@@ -169,16 +178,19 @@
     width: 88.27vw;
     box-sizing: border-box;
     height: 100%;
-    padding: 0 0 0 5px;
+    padding: 2px 0 0 6px;
     background: transparent;
   }
 
   .user__profile-button {
     background: none;
     border: none;
-    margin: 0;
+    margin: 1px 0 0 0;
     padding: 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .user__pic,
