@@ -3,9 +3,11 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
 ## Preview:
-
+Desktop (1440px x 900px)
 <img width="940" alt="Снимок экрана 2022-06-13 в 23 21 10" src="https://user-images.githubusercontent.com/54101611/173438726-47c8ba4c-7e5b-42ec-8e87-44cad9128cbe.png">
+Tablet (768px x 1024px)
 <img width="579" alt="Снимок экрана 2022-06-13 в 23 21 56" src="https://user-images.githubusercontent.com/54101611/173438733-c9dfc0c7-4748-4bfc-a64e-5910b00b6d19.png">
+Mobile (375px x 667px)
 <img width="343" alt="Снимок экрана 2022-06-13 в 23 22 37" src="https://user-images.githubusercontent.com/54101611/173438738-e0e4601c-5830-43df-827e-c006ddbab818.png">
 
 ## Development server
