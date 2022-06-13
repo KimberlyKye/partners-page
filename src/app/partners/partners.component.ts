@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Partner } from './partner';
+import { Partner } from '../const/partner';
 
 @Component({
   selector: 'app-partners',
