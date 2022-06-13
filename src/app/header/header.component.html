@@ -1,1 +1,22 @@
-<p>header works!</p>
+<header class="header">
+  <img src="../../assets/svg/logo.svg" alt="logo" class="logo" />
+  <div class="searchbar">
+    <img
+      src="../../assets/svg/search.svg"
+      alt="search"
+      class="searchbar__prefix"
+    />
+    <input type="text" placeholder="Найти..." class="searchbar__input" />
+  </div>
+  <div class="user">
+    <span class="user__name">{{ user.name }}</span>
+    <img
+      [src]="user.picUrl"
+      [alt]="user.name + ' profile picture'"
+      class="user__pic"
+    />
+    <button class="user__profile-button">
+      <img src="../../assets/svg/user.svg" alt="Open user profile" />
+    </button>
+  </div>
+</header>
