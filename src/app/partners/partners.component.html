@@ -1,1 +1,12 @@
-<p>partners works!</p>
+<div class="partners">
+  <h1 class="partners__header">{{ header | uppercase }}</h1>
+  <ul class="partners__list">
+    <li class="partners__item" *ngFor="let partner of partners">
+      <img
+        class="partners__image"
+        [src]="partner.url"
+        [alt]="'Our partner number ' + partner.id"
+      />
+    </li>
+  </ul>
+</div>
